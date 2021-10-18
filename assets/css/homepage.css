@@ -1,30 +1,56 @@
+
 body {
   font-family: "Raleway", sans-serif;
-  color: rgb(255, 0, 0);
+  color: rgb(255, 255, 255);
   position: relative;
-  background: transparent;
   margin: auto;
-  background-image: url(/assets/images/picbackground.jpg);
+  background-color:black;
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
+  background-image: url('https://images.unsplash.com/photo-1477132394330-d2376dc4c091?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2811&q=80');
+  background-size:cover;
+  -webkit-animation: slidein 130s;
+  animation: slidein 130s;
+  -webkit-animation-fill-mode:forwards;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;      
+}
+  @-webkit-keyframes slidein {
+  from {background-position: top; background-size:2000px; }
+  to {background-position: -100px 0px;background-size:2750px;}
+}
+  @keyframes slidein {
+  from {background-position: top;background-size:2000px; }
+  to {background-position: -100px 0px;background-size:2750px;}
+
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  background-size: cover;
-  left: 0;
-  right: 0;
+.center
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
   top: 0;
-  height: 100vh;
-  z-index: -1;
-  padding-left: 20px;
-  background-image: url(/assets/images/picbackground.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(75, 75, 250, 0.3);
+  border-radius: 3px;
 }
+
+
+
+
+
+
 .headerone{
   position:relative;
   overflow:hidden;
@@ -87,7 +113,6 @@ a:hover {
   overflow-y: auto;
   justify-content: center;
   text-align: center;
-  
 }
 
 #header * {
@@ -159,6 +184,8 @@ a:hover {
   }
 }
 
+
+
 .nav-menu {
   margin-top: 35px;
 }
@@ -178,7 +205,7 @@ a:hover {
 .nav-menu a {
   display: block;
   position: relative;
-  color: rgb(255, 255, 255);
+  color: rgb(255, 0, 0);
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
