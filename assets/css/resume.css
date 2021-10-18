@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-image: url(/assets/images/picbackground.jpg);
+    background-image: url(https://images.unsplash.com/photo-1501791187590-9ef2612ba1eb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2832&q=80);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
